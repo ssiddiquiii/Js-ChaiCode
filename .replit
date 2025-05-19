@@ -1,0 +1,8 @@
+modules = ["nodejs-20"]
+run = "node 01_basics/01_variables.js"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "node test.js"]
